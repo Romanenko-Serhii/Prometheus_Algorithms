@@ -22,7 +22,6 @@ def left(A, x):
 
 def min_heapify(A,x):
     if len(A)>=2:
-        #print(A[x])
         l = left(A, A[x])
         r = right(A, A[x])
         if l<=len(A)-1 and A[l]<A[x]:
@@ -78,7 +77,7 @@ def read_file(path):
 
 if __name__ == '__main__':
     A = read_file("input_16_10000.txt")
-    for i in range(1,2016):
+    for i in range(1,len(A):
         if len(heap_low) == 0 or A[i]<max(heap_low):
             add_elemen_low(heap_low,A[i])
         else:
