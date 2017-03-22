@@ -77,7 +77,7 @@ def read_file(path):
 
 if __name__ == '__main__':
     A = read_file("input_16_10000.txt")
-    for i in range(1,len(A):
+    for i in range(1,len(A)):
         if len(heap_low) == 0 or A[i]<max(heap_low):
             add_elemen_low(heap_low,A[i])
         else:
